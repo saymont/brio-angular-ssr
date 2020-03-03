@@ -22,7 +22,7 @@
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.app.json",
-            "aot": false,
+            "aot": true,
             "assets": [
               "src/favicon.ico",
               "src/assets"
@@ -46,7 +46,6 @@
               "sourceMap": false,
               "extractCss": true,
               "namedChunks": false,
-              "aot": true,
               "extractLicenses": true,
               "vendorChunk": false,
               "buildOptimizer": true,
@@ -141,15 +140,15 @@
                 }
               ],
               "sourceMap": false,
-              "optimization": {
-                "scripts": false,
-                "styles": true
-              }
+              "optimization": true
             }
           }
         }
       }
     }
   },
-  "defaultProject": "brio-angular-ssr"
+  "defaultProject": "brio-angular-ssr",
+  "cli": {
+    "analytics": "aa3f2796-9abc-43d3-a0c7-71a6fe9cea4d"
+  }
 }
