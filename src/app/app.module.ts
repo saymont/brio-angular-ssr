@@ -21,6 +21,7 @@ import { MatSortModule } from "@angular/material/sort";
 import { MatTableModule } from "@angular/material/table";
 import { MatToolbarModule } from "@angular/material/toolbar";
 import {MatMomentDateModule} from "@angular/material-moment-adapter";
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -46,6 +47,7 @@ import {MatMomentDateModule} from "@angular/material-moment-adapter";
         MatSelectModule,
         MatDatepickerModule,
         MatMomentDateModule,
+        BrowserAnimationsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
