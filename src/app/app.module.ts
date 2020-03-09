@@ -23,11 +23,13 @@ import { MatToolbarModule } from "@angular/material/toolbar";
 import { MatMomentDateModule } from "@angular/material-moment-adapter";
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NavBarComponent } from './components/nav-bar/nav-bar.component';
+import { ProfileComponent } from './profile/profile.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    NavBarComponent
+    NavBarComponent,
+    ProfileComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),
