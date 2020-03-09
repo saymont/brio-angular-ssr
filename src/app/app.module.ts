@@ -21,6 +21,7 @@ import { MatSortModule } from "@angular/material/sort";
 import { MatTableModule } from "@angular/material/table";
 import { MatToolbarModule } from "@angular/material/toolbar";
 import { MatMomentDateModule } from "@angular/material-moment-adapter";
+import { MatGridListModule } from '@angular/material/grid-list';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NavBarComponent } from './components/nav-bar/nav-bar.component';
 import { ProfileComponent } from './profile/profile.component';
@@ -51,6 +52,7 @@ import { ProfileComponent } from './profile/profile.component';
     MatSelectModule,
     MatDatepickerModule,
     MatMomentDateModule,
+    MatGridListModule,
     BrowserAnimationsModule,
   ],
   providers: [],
