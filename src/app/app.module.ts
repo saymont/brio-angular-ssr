@@ -4,6 +4,8 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
+import { CookieService } from 'ngx-cookie-service';
+
 import { MatMenuModule } from '@angular/material/menu';
 import { MatButtonModule } from '@angular/material/button'
 import { MatIconModule } from '@angular/material/icon';
@@ -55,7 +57,7 @@ import { ProfileComponent } from './profile/profile.component';
     MatGridListModule,
     BrowserAnimationsModule,
   ],
-  providers: [],
+  providers: [ CookieService ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
