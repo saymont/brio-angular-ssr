@@ -5,7 +5,7 @@ import { LandingComponent } from './pages/landing/landing.component';
 import { LoginComponent } from './pages/auth/login/login.component';
 import { NotFoundComponent } from './pages/errors/not-found/not-found.component';
 import { ProfileComponent } from './profile/profile.component';
-import { AuthGuard } from './auth.guard';
+import { AuthGuard } from './services/guards/auth.guard';
 
 const routes: Routes = [
   { path: '', component: LandingComponent },
