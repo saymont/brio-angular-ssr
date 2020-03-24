@@ -17,7 +17,8 @@ export class AuthService {
     createAuth0Client({
       domain: environment.AUTH0_DOMAIN,
       client_id: environment.AUTH0_CLIENT_ID,
-      redirect_uri: `${window.location.origin}`
+      redirect_uri: `${window.location.origin}`,
+      audience: "YOUR_API_IDENTIFIER"
     })
   ) as Observable<Auth0Client>).pipe(
     shareReplay(1), // Every subscription receives the same shared value
@@ -124,6 +125,12 @@ export class AuthService {
         returnTo: `${window.location.origin}`
       });
     });
+  }
+
+  getTokenSilently$(options?): Observable<string> {
+    return this.auth0Client$.pipe(
+      concatMap((client: Auth0Client) => from(client.getTokenSilently(options)))
+    );
   }
 
 }

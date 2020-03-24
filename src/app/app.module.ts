@@ -27,12 +27,15 @@ import { MatGridListModule } from '@angular/material/grid-list';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NavBarComponent } from './components/nav-bar/nav-bar.component';
 import { ProfileComponent } from './profile/profile.component';
+import { HttpClientModule } from '@angular/common/http';
+import { ExternalApiComponent } from './external-api/external-api.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavBarComponent,
-    ProfileComponent
+    ProfileComponent,
+    ExternalApiComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),
@@ -56,6 +59,9 @@ import { ProfileComponent } from './profile/profile.component';
     MatMomentDateModule,
     MatGridListModule,
     BrowserAnimationsModule,
+    BrowserModule,
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [ CookieService ],
   bootstrap: [AppComponent]

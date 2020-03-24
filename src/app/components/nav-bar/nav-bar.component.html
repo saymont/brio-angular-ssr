@@ -33,6 +33,7 @@
             </button>
             <button mat-button (click)="auth.login()" *ngIf="!auth.loggedIn">Log In</button>
             <button mat-button (click)="auth.logout()" *ngIf="auth.loggedIn">Log Out</button>
+            &nbsp;<a routerLink="external-api" *ngIf="auth.loggedIn">External API</a>
 
         </mat-toolbar>
 
