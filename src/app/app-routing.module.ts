@@ -7,7 +7,7 @@ import { NotFoundComponent } from './pages/errors/not-found/not-found.component'
 import { ProfileComponent } from './profile/profile.component';
 import { AuthGuard } from './services/guards/auth.guard';
 import { HTTP_INTERCEPTORS } from '@angular/common/http';
-import { InterceptorService } from './interceptor.service';
+import { InterceptorService } from './interceptors/interceptor.service';
 import { ExternalApiComponent } from './external-api/external-api.component';
 
 const routes: Routes = [
