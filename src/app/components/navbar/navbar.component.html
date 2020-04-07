@@ -1,0 +1,29 @@
+<div data-collapse="medium" data-animation="default" data-duration="400" class="navigation navbar w-nav">
+  <div class="navigation-wrap">
+    <a class="logo-link w-nav-brand" routerLink="./"><img src="assets/images/Pictogram_logotipo-04.png" width="395"
+        alt="" class="logo-image" srcset=""></a>
+    <div class="menu">
+      <nav role="navigation" class="navigation-items w-nav-menu">
+        <a class="navigation-item w-nav-link" routerLink="/terapia" [ngClass]="{'w--current' : nav_selector1==1}"
+          (click)="nav_selector1=1"><strong class="bold-text">terapia</strong></a>
+        <a class="navigation-item w-nav-link" routerLink="/briotext" [ngClass]="{'w--current' : nav_selector1==2}"
+          (click)="nav_selector1=2"><strong class="bold-text-3">briotext</strong></a>
+        <a class="navigation-item w-nav-link" routerLink="/sobre" [ngClass]="{'w--current' : nav_selector1==3}"
+          (click)="nav_selector1=3"><strong class="bold-text-3">sobre</strong></a>
+        <a class="navigation-item w-nav-link" routerLink="/login" [ngClass]="{'w--current' : nav_selector1==4}"
+          (click)="nav_selector1=4"><strong class="bold-text-3">Login</strong></a>
+      </nav>
+      <div class="menu-button w-nav-button">
+        <img src="assets/images/menu-icon_1menu-icon.png" width="22" alt="" class="menu-icon" srcset="">
+      </div>
+    </div>
+    <a class="button cc-contact-us w-inline-block" routerLink="/#">
+      <div class="text-block-3">
+        ser briosense
+      </div>
+    </a>
+  </div>
+</div>
+<script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.4.1.min.220afd743d.js?site=5e7cd240ab9cca7ea641ea73"
+  type="text/javascript" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
